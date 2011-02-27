@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="prototype.js"></script>
+  <script type="text/javascript" src="map_check.js"></script>
+</head>
+<body onload="onLoadBody()">
+<div>
+
+  緯度経度：<input type="text" name="inputLatLng" id="inputLatLng1" value="0,0,0,0" size="120"/>
+  <span style="font-size:small">※左上緯度、経度、右下緯度、経度の順番</span><br/>
+  分割（列数、行数）：
+  <input type="text" name="inputMatCol" id="inputMatCol1" value="0"/>
+  <input type="text" name="inputMatRow" id="inputMatRow1" value="0"/>
+  画像フォルダ：
+  <input type="text" name="inputInputDir" id="inputInputDir1" value="images" size="40"/>
+
+  <input type="button" value="重ね合わせ" id="buttonOverlay1"/>
+</div>
+<div id="map_canvas" style="width:100%; height:100%"></div>
+</body>
+</html>
